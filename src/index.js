@@ -7,12 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 const rootEl = document.getElementById("root");
 
 let render = () => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    rootEl
-  );
+  ReactDOM.render(<App />, rootEl);
 };
 
 if (module.hot) {
