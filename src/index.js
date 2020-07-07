@@ -10,11 +10,11 @@ let render = () => {
   ReactDOM.render(<App />, rootEl);
 };
 
-// if (module.hot) {
-//   module.hot.accept("./App/Layout/App", () => {
-//     setTimeout(render);
-//   });
-// }
+if (module.hot) {
+  module.hot.accept("./App/Layout/App", () => {
+    setTimeout(render);
+  });
+}
 
 render();
 
